@@ -15,20 +15,20 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto"> 
-          <li class="nav-item">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
             <nuxt-link class="nav-link" to="/">HOME</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/about">ABOUT</nuxt-link>
+            <nuxt-link class="nav-link" to="/about" data-toggle="collapse" data-target=".navbar-collapse.show">ABOUT</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/works">WORKS</nuxt-link>
+            <nuxt-link class="nav-link" to="/works" data-toggle="collapse" data-target=".navbar-collapse.show">WORKS</nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/experience">EXPERIENCE</nuxt-link>
+            <nuxt-link class="nav-link" to="/experience" data-toggle="collapse" data-target=".navbar-collapse.show">EXPERIENCE</nuxt-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
             <a
               class="nav-link"
               href="https://ken551113.github.io"
@@ -53,6 +53,14 @@ export default {};
 }
 
 .nav-item {
-  font-weight: 700;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 576px){
+  .navbar>.container{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 </style>
