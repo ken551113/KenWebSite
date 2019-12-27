@@ -8,7 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "PORT=3002 nuxt start ",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "deploy": "nuxt build && npm start"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.9.0",
