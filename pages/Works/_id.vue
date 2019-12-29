@@ -37,7 +37,7 @@ export default {
         {
           hid: "og:url",
           property: "og:url",
-          content: `https://www.mutienliao.com${this.$route.path}`
+          content: `https://kenlee.com/${this.$route.path}`
         },
         {
           hid: "og:description",
@@ -57,7 +57,7 @@ export default {
         {
           hid: "twitter:url",
           property: "twitter:url",
-          content: `https://www.mutienliao.com${this.$route.path}`
+          content: `https://kenlee.com.tw/${this.$route.path}`
         },
         {
           hid: "twitter:description",
