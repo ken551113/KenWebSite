@@ -75,6 +75,7 @@
             <li>使用 Vue 開發 Component 管理重複結構</li>
             <li>使用 Nuxt 框架進行 SSR 架構網站開發</li>
             <li>結合 Vue 與 LIFF 在 Line 上進行開發</li>
+            <li>利用 Vuex 管理應用程式狀態</li>
             <li>jQuery、AJAX 使用經驗</li>
             <li>使用 Bootstrap4 與格線系統進行開發</li>
             <li>利用 Socket.io 進行網路通訊</li>
