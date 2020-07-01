@@ -5,7 +5,7 @@
         <div class="about-content">
           <h1>李建億 KenLee</h1>
           <p>
-            過去於互動設計公司擔任軟體工程師，因為是接案性質因此需要不斷精進並整合不同技術，包括前後端開發、軟硬體整合、硬體開發…等等。對前端領域有強烈的熱情，除了完成工作上的專案以外，常常利用下班時間學習、進修新的前後端技術與參加聚會，也會利用閒暇時間將過去工作所使用的技術與前後端進行整合的slide
+            過去於互動設計公司擔任軟體工程師，因為是接案性質因此需要不斷精進並整合不同技術，包括前後端開發、軟硬體整合、硬體開發…等等。對前端領域有強烈的熱情，除了完成工作上的專案以外，常常利用下班時間學習、進修新的前後端技術與參加聚會，也會利用閒暇時間將過去工作所使用的技術與前後端進行整合的side
             project以求不斷充實並精進自己。
             過去在工作上，時常需要直接與業主、設計師、工程師溝通，討論需求與系統規劃，對於不同領域間的溝通以及時程掌握有一定的熟悉度。
             希望未來可以在前端領域持續深耕並且瞭解大團隊合作下的開發流程與溝通技巧，開發讓使用者有良好體驗的專案。
@@ -99,7 +99,60 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+        title: "About | Ken Lee",
+        meta: [
+        {
+          hid:'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid:'og:url',
+          property: 'og:url',
+          content: `https://kenlee.com.tw/${this.$route.path}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: "About | Ken Lee",
+        }, 
+        {
+          hid:'og:description',
+          property: 'og:description',
+          content: "I'm KenLee"
+        }, 
+        {
+          hid:'og:image',
+          property: 'og:image',
+          content: "https://kenlee.com.tw/avatar.jpg"
+        },
+        {
+          hid:'twitter:url',
+          property: 'twitter:url',
+          content: `https://kenlee.com.tw/${this.$route.path}`,
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: "About | Ken Lee",
+        }, 
+        {
+          hid:'twitter:description',
+          property: 'twitter:description',
+          content: "I'm KenLee"
+        }, 
+        {
+          hid:'twitter:image',
+          property: 'twitter:image',
+          content: "https://kenlee.com.tw/avatar.jpg"
+        }
+        ]
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

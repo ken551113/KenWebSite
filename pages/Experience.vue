@@ -9,7 +9,58 @@
 
 <script>
 export default {
-
+  head() {
+    return {
+        title: "Experience | Ken Lee",
+        meta: [
+        {
+          hid:'og:type',
+          property: 'og:type',
+          content: 'website'
+        },
+        {
+          hid:'og:url',
+          property: 'og:url',
+          content: `https://kenlee.com.tw/${this.$route.path}`,
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: "Experience | Ken Lee",
+        }, 
+        {
+          hid:'og:description',
+          property: 'og:description',
+          content: "I'm KenLee"
+        }, 
+        {
+          hid:'og:image',
+          property: 'og:image',
+          content: "https://kenlee.com.tw/avatar.jpg"
+        },
+        {
+          hid:'twitter:url',
+          property: 'twitter:url',
+          content: `https://kenlee.com.tw/${this.$route.path}`,
+        },
+        {
+          hid: 'twitter:title',
+          property: 'twitter:title',
+          content: "Experience | Ken Lee",
+        }, 
+        {
+          hid:'twitter:description',
+          property: 'twitter:description',
+          content: "I'm KenLee"
+        }, 
+        {
+          hid:'twitter:image',
+          property: 'twitter:image',
+          content: "https://kenlee.com.tw/avatar.jpg"
+        }
+        ]
+    };
+  },
   data(){
     return{
       post1:{},

@@ -2,7 +2,7 @@
   <footer>
     <div class="container">
       <div class="footer-copyright text-center ">
-        KenLee © 2019. All Right Reserved.
+        KenLee © 2020. All Right Reserved.
       </div>
     </div>
   </footer>

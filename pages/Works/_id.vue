@@ -37,7 +37,7 @@ export default {
         {
           hid: "og:url",
           property: "og:url",
-          content: `https://kenlee.com/${this.$route.path}`
+          content: `https://kenlee.com.tw/${this.$route.path}`
         },
         {
           hid: "og:description",

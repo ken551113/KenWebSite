@@ -54,7 +54,7 @@ import Card from "~/components/Card";
 export default {
   head() {
     return {
-        title: "Works | 木天寮",
+        title: "Works | Ken Lee",
         meta: [
         {
           hid:'og:type',
@@ -64,42 +64,42 @@ export default {
         {
           hid:'og:url',
           property: 'og:url',
-          content: `https://www.mutienliao.com${this.$route.path}`,
+          content: `https://kenlee.com.tw/${this.$route.path}`,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: "Works | 木天寮",
+          content: "Works | Ken Lee",
         }, 
         {
           hid:'og:description',
           property: 'og:description',
-          content: "木天寮為互動 x 科技 x 藝術 x 設計的創作團隊，在這數位化時代很難用文字去界定一個跨領域結合的創作框架，因此我們什麼都做，什麼都不奇怪。"
+          content: "I'm KenLee"
         }, 
         {
           hid:'og:image',
           property: 'og:image',
-          content: "https://www.mutienliao.com/logo.png"
+          content: "https://kenlee.com.tw/avatar.jpg"
         },
         {
           hid:'twitter:url',
           property: 'twitter:url',
-          content: `https://www.mutienliao.com${this.$route.path}`,
+          content: `https://kenlee.com.tw/${this.$route.path}`,
         },
         {
           hid: 'twitter:title',
           property: 'twitter:title',
-          content: "Works | 木天寮",
+          content: "Works | Ken Lee",
         }, 
         {
           hid:'twitter:description',
           property: 'twitter:description',
-          content: "木天寮為互動 x 科技 x 藝術 x 設計的創作團隊，在這數位化時代很難用文字去界定一個跨領域結合的創作框架，因此我們什麼都做，什麼都不奇怪。"
+          content: "I'm KenLee"
         }, 
         {
           hid:'twitter:image',
           property: 'twitter:image',
-          content: "https://www.mutienliao.com/logo.png"
+          content: "https://kenlee.com.tw/avatar.jpg"
         }
         ]
     };
@@ -113,17 +113,19 @@ export default {
   },
   asyncData({$axios}) {
     const api =
-        "https://wpadmin.kenlee.com.tw/wp-json/wp/v2/posts?categories=6&&_embed&per_page=100";
+        "http://localhost:3000/api/products";
+        
     return $axios.get(api).then(response =>{
-        let posts = response.data;
-        posts.forEach(post => {
-          post.imageUrl =
-            post._embedded["wp:featuredmedia"][0].media_details.sizes[
-              "medium"
-            ].source_url;
-          post.url = `works/${post.id}`;
-        });
-        return{posts}
+      console.log(response);
+        // let posts = response.data;
+        // posts.forEach(post => {
+        //   post.imageUrl =
+        //     post._embedded["wp:featuredmedia"][0].media_details.sizes[
+        //       "medium"
+        //     ].source_url;
+        //   post.url = `works/${post.id}`;
+        // });
+        // return{posts}
     })
   },
   methods: {

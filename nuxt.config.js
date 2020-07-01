@@ -7,9 +7,44 @@ export default {
   head: {
     title: "Ken Lee",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "I'm KenLee" }
+      { charset: "utf-8" },
+      {
+        name: "viewport",
+        content:
+          "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website"
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "I'm Ken Lee"
+      },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "I'm Ken Lee"
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Ken Lee"
+      },
+      {
+        hid: "og:url",
+        property: "og:url",
+        content: `https://kenlee.com.tw/`
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://kenlee.com.tw/avatar.jpg"
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
