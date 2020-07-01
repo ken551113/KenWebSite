@@ -113,19 +113,18 @@ export default {
   },
   asyncData({$axios}) {
     const api =
-        "http://localhost:3000/api/products";
+        "https://wpadmin.kenlee.com.tw/wp-json/wp/v2/posts?categories=6&&_embed&per_page=100";
         
     return $axios.get(api).then(response =>{
-      console.log(response);
-        // let posts = response.data;
-        // posts.forEach(post => {
-        //   post.imageUrl =
-        //     post._embedded["wp:featuredmedia"][0].media_details.sizes[
-        //       "medium"
-        //     ].source_url;
-        //   post.url = `works/${post.id}`;
-        // });
-        // return{posts}
+        let posts = response.data;
+        posts.forEach(post => {
+          post.imageUrl =
+            post._embedded["wp:featuredmedia"][0].media_details.sizes[
+              "medium"
+            ].source_url;
+          post.url = `works/${post.id}`;
+        });
+        return{posts}
     })
   },
   methods: {
